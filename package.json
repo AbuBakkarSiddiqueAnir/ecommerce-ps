@@ -11,6 +11,8 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "autoprefixer": "^10.4.19",
+    "embla-carousel-autoplay": "^8.0.2",
+    "embla-carousel-react": "^8.0.2",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",

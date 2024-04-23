@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: linear-gradient(180deg, #f3edc9 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 :root {
   --radial-gradient-background: 250, 250, 250;
 }
@@ -11,6 +15,6 @@
     @apply scroll-smooth;
   }
   body {
-    @apply pb-20  bg-blend-soft-light;
+    @apply bg-blend-soft-light;
   }
 }

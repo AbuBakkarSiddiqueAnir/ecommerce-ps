@@ -30,6 +30,7 @@ export default {
       colors: {
         green: {
           main: "#03484D",
+          heavy: "#0E3B3E",
         },
         blue: {
           main: "",
@@ -38,7 +39,10 @@ export default {
           text: "#ABA3A3",
         },
 
-        teal: "#00DFE0",
+        teal: {
+          medium: "#14B1F0",
+          light: "#00CAD7",
+        },
       },
       fontSize: {
         "h-huge": [
@@ -69,9 +73,9 @@ export default {
         ],
 
         "h-sm": [
-          "clamp(1rem, 1.3vw + 0.5rem, 1.1rem)",
+          "clamp(1.25rem, 2vw + 0.5rem, 1.75rem)",
           {
-            lineHeight: "125%",
+            lineHeight: "120%",
             fontWeight: "400",
             letterSpacing: "0.019rem",
           },
@@ -104,7 +108,7 @@ export default {
         md: "0.31rem",
       },
       boxShadow: {
-        "nav-bar": "0px 20px 40px 0px rgba(0, 0, 0, 0.10);",
+        "nav-bar": " 0px 4px 9px 0px #00000063",
       },
     },
   },
