@@ -13,8 +13,7 @@ import { getCategories, getProducts } from "@/lib/products-api";
 import { store } from "@/store";
 import { Provider } from "react-redux";
 
-export default function index({ products, categories, jewelryProducts }) {
-  console.log(categories);
+export default function index({ products, categories }) {
   return (
     <main className="w-full min-h-[100dvh] p-0 m-0">
       <HeaderTop options={categories} />

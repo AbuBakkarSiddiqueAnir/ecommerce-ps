@@ -8,7 +8,7 @@ import Instagram from "@/assets/insta";
 
 export default function Navbar() {
   return (
-    <nav className="px-[4rem] py-[0.8rem] bg-green-heavy text-white flex shadow-nav-bar">
+    <nav className="px-[4rem] py-[0.8rem] bg-green-heavy text-white flex shadow-nav-bar roboto">
       <Button className="p-0 bg-transparent flex gap-x-3 items-center font-normal">
         <Menu />
         <span className="text-[17px] font-normal">Browse By Category</span>
