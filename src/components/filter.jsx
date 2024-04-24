@@ -9,7 +9,6 @@ export default function Filter({ options }) {
   };
 
   const handleSearch = () => {
-    // Handle search logic here
     console.log("Searching for:", selectedOption);
   };
 

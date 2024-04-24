@@ -8,9 +8,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full p-40    mx-auto py-14 bg-[#393939]">
+    <footer className="w-full  p-10 lg:p-36    mx-auto py-14 bg-[#393939]">
       <div className="w-full ">
-        <div className="w-full grid grid-cols-4 gap-x-8">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           <div>
             <Logo />
             <p className="text-b-2 tracking-tighter font-normal text-teal-light">
@@ -131,7 +131,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex gap-x-4 mt-6 items-center justify-end ">
+        <div className="flex gap-4 mt-10 items-center justify-start">
           <Image src={"/v1.svg"} width={97} height={55} />
           <Image src={"/v2.svg"} width={97} height={55} />
           <Image src={"/v3.svg"} width={97} height={55} />

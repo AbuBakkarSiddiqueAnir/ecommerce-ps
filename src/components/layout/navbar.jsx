@@ -27,7 +27,7 @@ export default function Navbar() {
           Become a Vendor
         </Link>
       </menu>
-      <div className="flex-1  gap-x-6 flex justify-end">
+      <div className="flex-1  gap-x-6 flex justify-end items-center">
         <Button link="/social" className="bg-transparent p-0">
           <Facebook />
         </Button>

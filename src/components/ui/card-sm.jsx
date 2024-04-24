@@ -2,7 +2,7 @@ import Button from "./button";
 
 export default function CardSm({ product }) {
   return (
-    <article className="p-2 border max-w-[220px] border-[#00000021]">
+    <article className="p-2 border max-w-full border-[#00000021]">
       <div>
         <span className="truncate text-[15px] font-normal">
           {product.category}
