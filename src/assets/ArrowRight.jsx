@@ -10,9 +10,9 @@ export default function () {
       <path
         d="M1.75 34.5L18.25 18L1.75 1.5"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

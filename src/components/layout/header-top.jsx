@@ -20,18 +20,26 @@ export default function HeaderTop({ options }) {
             <Headphone />
             <span className="text-[13px]">+011 5827918</span>
           </div>
-          <Button className={"bg-transparent p-0 text-[13px] text-left"}>
+          <Button
+            link={true}
+            href="/"
+            className={"bg-transparent p-0 text-[13px] text-left"}
+          >
             SignIn
           </Button>
         </div>
         <div className="flex gap-x-6">
-          <Button className={"bg-transparent p-0"}>
+          <Button link={true} href="/" className={"bg-transparent p-0"}>
             <User />
           </Button>
-          <Button className={"bg-transparent p-0"}>
+          <Button link={true} href="/" className={"bg-transparent p-0"}>
             <Heart />
           </Button>
-          <Button className={"bg-transparent p-0 relative flex gap-1"}>
+          <Button
+            link={true}
+            href="/"
+            className={"bg-transparent p-0 relative flex gap-1"}
+          >
             <>
               <Cart />
               <span className="absolute -top-4 left-2 text-[#FDDE3B]">3</span>

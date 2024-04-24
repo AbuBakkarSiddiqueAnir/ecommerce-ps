@@ -7,6 +7,7 @@ export default function Navigation({
     <div className="absolute left-[45%] bottom-6 flex gap-x-4">
       {slides.map((_, index) => (
         <button
+          key={index}
           onClick={() => scrollTo(index)}
           className={`w-12 h-3 rounded-lg bg-[#AA9393] ${
             index === activeSlideIndex ? "bg-green-900" : ""

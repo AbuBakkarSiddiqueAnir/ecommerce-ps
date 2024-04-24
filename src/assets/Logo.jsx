@@ -10,9 +10,9 @@ export default function Logo() {
       <path
         d="M3 12C11.0057 12 23.5 12 23.5 12L32.5 35.5L41 12L49 35.5C49 35.5 54.79 21.1773 58.5 12M66 12V35.5M75 35.5C75 26.3227 75 12 75 12L90.5 34.5V12"
         stroke="white"
-        stroke-width="5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <circle cx="33" cy="44.5" r="3.5" fill="white" />
       <circle cx="50" cy="44.5" r="3.5" fill="white" />

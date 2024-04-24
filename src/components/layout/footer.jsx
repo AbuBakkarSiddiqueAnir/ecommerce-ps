@@ -132,10 +132,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex gap-4 mt-10 items-center justify-start">
-          <Image src={"/v1.svg"} width={97} height={55} />
-          <Image src={"/v2.svg"} width={97} height={55} />
-          <Image src={"/v3.svg"} width={97} height={55} />
-          <Image src={"/v4.svg"} width={97} height={55} />
+          <Image alt="finacial method" src={"/v1.svg"} width={97} height={55} />
+          <Image alt="finacial method" src={"/v2.svg"} width={97} height={55} />
+          <Image alt="finacial method" src={"/v3.svg"} width={97} height={55} />
+          <Image alt="finacial method" src={"/v4.svg"} width={97} height={55} />
         </div>
       </div>
     </footer>

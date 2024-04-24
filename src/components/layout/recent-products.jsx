@@ -8,7 +8,7 @@ export default function RecentProducts({ products }) {
       </h2>
       <div className="w-full grid sm:grid-cols-2 grid-cols-1 md:grid-cols-4 xl:grid-cols-7  gap-8 ">
         {products.map((product) => (
-          <CardSm product={product} />
+          <CardSm key={product.id} product={product} />
         ))}
       </div>
     </section>

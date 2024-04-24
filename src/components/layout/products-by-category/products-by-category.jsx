@@ -51,6 +51,7 @@ export default function ProductsByCategory({ categories }) {
           <>
             {new Array(5).fill(null).map((_, index) => (
               <div
+                key={index}
                 className={`p-6 border ${
                   index === 2 ? "h-[48rem]" : "h-full"
                 } animate-pulse bg-gray-200 item-${index + 1}`}
@@ -60,7 +61,9 @@ export default function ProductsByCategory({ categories }) {
         )}
         {productsData?.length > 0 &&
           productsData?.map((product, index) => {
-            return <SelectCard index={index} product={product} />;
+            return (
+              <SelectCard key={product.id} index={index} product={product} />
+            );
           })}
       </div>
     </section>
