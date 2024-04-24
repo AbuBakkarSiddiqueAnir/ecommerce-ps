@@ -1,6 +1,6 @@
 # ecommerce
 
-- Live : https://phantomtyper.netlify.app
+- Live : https://ecommerce-ps.vercel.app/
 
 ## Getting Started
 
