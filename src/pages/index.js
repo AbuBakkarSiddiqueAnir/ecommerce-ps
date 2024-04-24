@@ -8,22 +8,24 @@ import {
   ProductsByCategory,
   RecentProducts,
 } from "@/components";
-import {
-  getCategories,
-  getProducts,
-  getProductsByCategory,
-} from "@/lib/products-api";
+import Divider from "@/components/ui/divider";
+import { getCategories, getProducts } from "@/lib/products-api";
+import { store } from "@/store";
+import { Provider } from "react-redux";
 
 export default function index({ products, categories, jewelryProducts }) {
-  console.log(jewelryProducts);
+  console.log(categories);
   return (
     <main className="w-full min-h-[100dvh] p-0 m-0">
       <HeaderTop />
       <Navbar />
       <HeroSlider />
-      {/* <CategorySlider /> */}
+      <CategorySlider />
+      <Divider cls=" w-[92%] mx-auto my-12 " />
       <RecentProducts products={products} />
-      <ProductsByCategory />
+      <Provider store={store}>
+        <ProductsByCategory categories={categories} />
+      </Provider>
       <Footer />
       <FooterBottom />
     </main>
@@ -35,13 +37,10 @@ export async function getServerSideProps() {
 
   const categories = await getCategories();
 
-  const jewelryProducts = await getProductsByCategory("jewelery");
-
   return {
     props: {
       products,
       categories,
-      jewelryProducts,
     },
   };
 }

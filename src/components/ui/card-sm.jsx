@@ -1,7 +1,6 @@
 import Button from "./button";
 
 export default function CardSm({ product }) {
-  console.log(product);
   return (
     <article className="p-2 border max-w-[220px] border-[#00000021]">
       <div>

@@ -3,12 +3,14 @@ import Logo from "@/assets/Logo";
 import Instagram from "@/assets/insta";
 import LinkedIn from "@/assets/linkedin";
 import Twitter from "@/assets/twitter";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full pl-48 pr-10  mx-auto py-14 bg-[#393939]">
+    <footer className="w-full p-40    mx-auto py-14 bg-[#393939]">
       <div className="w-full ">
-        <div className="w-full grid grid-cols-4">
+        <div className="w-full grid grid-cols-4 gap-x-8">
           <div>
             <Logo />
             <p className="text-b-2 tracking-tighter font-normal text-teal-light">
@@ -40,12 +42,30 @@ export default function Footer() {
           <div className="">
             <h6 className="text-[#00CAD7] text-[20px] mb-[21px]">Trending</h6>
             <ul className="flex-col text-white flex gap-3">
-              <li className="text-b-2 font-normal "> Installments</li>
-              <li className="text-b-2 font-normal "> Electronics</li>
-              <li className="text-b-2 font-normal "> Grocery</li>
-              <li className="text-b-2 font-normal "> Health & Beauty</li>
-              <li className="text-b-2 font-normal "> Home Appliances</li>
-              <li className="text-b-2 font-normal "> Mobile Accessories</li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Installments </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Electronics </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Grocery </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Health & Beauty </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Home Appliances </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Mobile Accessories </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -53,12 +73,30 @@ export default function Footer() {
               Information
             </h6>
             <ul className="flex-col text-white flex gap-3">
-              <li className="text-b-2 font-normal "> About Us</li>
-              <li className="text-b-2 font-normal "> Contact Us</li>
-              <li className="text-b-2 font-normal "> FAQs</li>
-              <li className="text-b-2 font-normal "> Shipping & Return</li>
-              <li className="text-b-2 font-normal "> Privacy policy</li>
-              <li className="text-b-2 font-normal "> Terms & Conditions</li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> About Us </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Contact Us </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> FAQs </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Shipping & Return </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Privacy policy </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Terms & Conditions </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -66,14 +104,38 @@ export default function Footer() {
               Customer Care
             </h6>
             <ul className="flex-col text-white flex gap-3">
-              <li className="text-b-2 font-normal ">My Account</li>
-              <li className="text-b-2 font-normal "> Track Your Order</li>
-              <li className="text-b-2 font-normal "> Recently Viewed</li>
-              <li className="text-b-2 font-normal "> Wishlist</li>
-              <li className="text-b-2 font-normal "> Compare</li>
-              <li className="text-b-2 font-normal "> Become a Vendor</li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/">My Account </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Track Your Order </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Recently Viewed </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Wishlist </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Compare </Link>
+              </li>
+              <li className="text-b-2 font-normal ">
+                {" "}
+                <Link href="/"> Become a Vendor </Link>
+              </li>
             </ul>
           </div>
+        </div>
+        <div className="flex gap-x-4 mt-6 items-center justify-end ">
+          <Image src={"/v1.svg"} width={97} height={55} />
+          <Image src={"/v2.svg"} width={97} height={55} />
+          <Image src={"/v3.svg"} width={97} height={55} />
+          <Image src={"/v4.svg"} width={97} height={55} />
         </div>
       </div>
     </footer>

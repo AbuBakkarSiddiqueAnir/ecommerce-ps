@@ -110,6 +110,9 @@ export default {
       boxShadow: {
         "nav-bar": " 0px 4px 9px 0px #00000063",
       },
+      backgroundColor: {
+        "b-1": "linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)",
+      },
     },
   },
   plugins: [],
