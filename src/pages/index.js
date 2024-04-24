@@ -17,7 +17,7 @@ export default function index({ products, categories, jewelryProducts }) {
   console.log(categories);
   return (
     <main className="w-full min-h-[100dvh] p-0 m-0">
-      <HeaderTop />
+      <HeaderTop options={categories} />
       <Navbar />
       <HeroSlider />
       <CategorySlider />

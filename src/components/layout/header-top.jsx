@@ -6,12 +6,12 @@ import Heart from "@/assets/Heart";
 import Cart from "@/assets/Cart";
 import Headphone from "@/assets/headphone";
 
-export default function HeaderTop() {
+export default function HeaderTop({ options }) {
   return (
     <header className="px-[4rem] py-[1.4rem] bg-green-main flex justify-between items-center text-white">
       <div className="flex items-center gap-x-10">
         <Logo />
-        <Filter />
+        <Filter options={options} />
       </div>
       <div className="flex items-center gap-x-7">
         <div className="flex flex-col">
